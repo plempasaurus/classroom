@@ -25,7 +25,27 @@
             lorem, vitae convallis nisl pretium in. Vivamus dictum metus sapien.
             Curabitur a convallis sapien.
             </p>
+            <div class="button-holder">
             <button class="button" type="button">Github</button>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="chatbox-preview.png" alt="chatbox-preview" style="width: 100%" />
+          <div class="container"></div>
+          <button type="button" class="collapsible"><h2><b>Lorem ipsum dolor sit amet</b></h2></button>
+          <div class="content">
+            <p>
+            consectetur adipiscing elit. Duis augue
+            nulla, condimentum vitae lacus sodales, sodales volutpat purus. Sed
+            ex neque, cursus eget leo at, finibus feugiat erat. Morbi suscipit
+            vehicula leo. Etiam quis molestie leo. Praesent bibendum nulla
+            lorem, vitae convallis nisl pretium in. Vivamus dictum metus sapien.
+            Curabitur a convallis sapien.
+            </p>
+            <div class="button-holder">
+            <button class="button" type="button">Github</button>
+          </div>
           </div>
         </div>
       <script>
@@ -66,7 +86,7 @@
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    text-align:justify !important; /* why is this no overriding? */
+    text-align:justify !important; /* y is this no overriding? */
     }
 
   /* On mouse-over, add a deeper shadow */
@@ -93,8 +113,7 @@
            
   /* Style the collapsible content. Note: hidden by default */
   .content {
-  padding: 0 18px;
-  position: static;
+  padding: 0px 18px;
   background-color: #ccc;
   max-height: 0;
   overflow: hidden;
@@ -103,12 +122,18 @@
   transition-delay: 0s; 
 }
 
+.button-holder {
+ width: 100%;
+ text-align: right;
+ padding-bottom: ;
+}
+
+
 .button {
   background-color: #41354d;
   border-color: #41354d;
   border-radius: 4px;
   color: white;
-  float: right;
   padding: 15px 25px;
   text-transform: capitalize;
   font-size: 12px;
