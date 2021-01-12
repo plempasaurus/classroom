@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Potato Classroom Projects</title>
+    <title>Potato Classroom</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -11,134 +11,64 @@
   </head>
   <body class="body">
     <main class="main">
-      <h1 class="title">Potato Classroom Projects</h1>
-        <div class="card">
-          <img src="chatbox-preview.png" alt="chatbox-preview" style="width: 100%" />
-          <div class="container"></div>
-          <button type="button" class="collapsible"><h2><b>Lorem ipsum dolor sit amet</b></h2></button>
-          <div class="content">
-            <p>
-            consectetur adipiscing elit. Duis augue
-            nulla, condimentum vitae lacus sodales, sodales volutpat purus. Sed
-            ex neque, cursus eget leo at, finibus feugiat erat. Morbi suscipit
-            vehicula leo. Etiam quis molestie leo. Praesent bibendum nulla
-            lorem, vitae convallis nisl pretium in. Vivamus dictum metus sapien.
-            Curabitur a convallis sapien.
-            </p>
-            <div class="button-holder">
-            <button class="button" type="button">Github</button>
-          </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="chatbox-preview.png" alt="chatbox-preview" style="width: 100%" />
-          <div class="container"></div>
-          <button type="button" class="collapsible"><h2><b>Lorem ipsum dolor sit amet</b></h2></button>
-          <div class="content">
-            <p>
-            consectetur adipiscing elit. Duis augue
-            nulla, condimentum vitae lacus sodales, sodales volutpat purus. Sed
-            ex neque, cursus eget leo at, finibus feugiat erat. Morbi suscipit
-            vehicula leo. Etiam quis molestie leo. Praesent bibendum nulla
-            lorem, vitae convallis nisl pretium in. Vivamus dictum metus sapien.
-            Curabitur a convallis sapien.
-            </p>
-            <div class="button-holder">
-            <button class="button" type="button">Github</button>
-          </div>
-          </div>
-        </div>
-      <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      }
-      </script>
+      <h1 class="title">Potato Classroom</h1>
+      <div class="main-image">
+        <img class="pair-programming" src="pair-programming.png">
+      </div>
+      <div class="home-sub">
+        <h2 class="intro">Looking for a Challenge?</h2>
+        <p class="description">Improve your technical experience by designing, developing and launching real-world projects.</p>  
+      </div>
+      <a class="button-main" href="projects.html">Get Started</button> 
     </main> 
   </body>
 
 <style>
   .body {
     font-family:Arial, Helvetica, sans-serif;
-    display: grid;
+    display: inline-grid;
     text-align: center;
+    grid-template-columns: auto
     }
+  .title {
+    font-size: 35px;
+  }
       
   .main {
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
     }
-     
-  .card {
-    /* Add shadows to create the "card" effect */
-    margin: 10px 5px 15px 20px;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    text-align:justify !important; /* y is this no overriding? */
-    }
-
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-
-
-  /* Style the button that is used to open and close the collapsible content */
-  .collapsible {
-    color: black;
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    text-align: center;
-    outline: none;
-    
-    }
-         
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
-    background-color: #ccc;
-    }
-           
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
-  padding: 0px 18px;
-  background-color: #ccc;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease;
-  transition-duration: 500ms;
-  transition-delay: 0s; 
-}
-
-.button-holder {
- width: 100%;
- text-align: right;
- padding-bottom: ;
-}
-
-
-.button {
-  background-color: #41354d;
-  border-color: #41354d;
-  border-radius: 4px;
-  color: white;
-  padding: 15px 25px;
-  text-transform: capitalize;
-  font-size: 12px;
-  font-weight: 500;
+  
+  .main-image {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
   }
+ 
+  .intro {
+    font-size: 25px;
+    margin-top: 40px;
+    max-width: 450px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+  }
+     
+  .button-main {
+    background-color: #41354d;
+    border-color: #41354d;
+    border-radius: 4px;
+    color: white;
+    padding: 14px 25px 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    }
     </style>
-  </body>
 </html>
